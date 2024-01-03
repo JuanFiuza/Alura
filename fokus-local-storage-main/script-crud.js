@@ -7,6 +7,8 @@ const btnCancelar = document.querySelector('.app__form-footer__button--cancel');
 const paragrafoDescricaoTarefa = document.querySelector('.app__section-active-task-description');
 const btnRemoverConcluidas = document.querySelector('#btn-remover-concluidas');
 const btnRemoverTodas = document.querySelector('#btn-remover-todas');
+const btnRemoverSelecionada = document.querySelector('#btn-remover-selecionada');
+
 
 
 let tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
@@ -152,7 +154,14 @@ const removerTarefas = (somenteCompletas) => {
 
 btnRemoverConcluidas.onclick = () => removerTarefas(true);
 btnRemoverTodas.onclick = () => removerTarefas(false);
-
+btnRemoverSelecionada.onclick = () => {
+    const removerSelecionada = document.querySelector(".app__section-task-list-item-active");
+    if (removerSelecionada == null || '') {
+        alert('Nenhuma tarefa selecionada!')
+    } else {
+        removerSelecionada.remove();
+    }
+};
 
 
 const pularTempo = document.querySelector('#Seconds');
