@@ -71,3 +71,11 @@ Utilizar a função prompt para obter informações diretamente do usuário;
 * Trabalhamos com a criação e resposta a eventos personalizados, como o evento FocoFinalizado, que é usado para marcar uma tarefa como concluída;
 
 * Melhoramos a experiência do usuário ao fornecer feedback visual sobre a tarefa selecionada e a capacidade de marcar uma tarefa como concluída
+
+* Entendemos como acessar e alterar elementos no DOM, uma habilidade fundamental para criar interações dinâmicas nas páginas web;
+
+* Exploramos como capturar e responder a eventos como cliques e submissões de formulário, permitindo que nossa aplicação reaja às ações dos usuários;
+
+* Aprendemos a manter e atualizar um estado local para nossa aplicação, usando a capacidade do localStorage para persistir tarefas e estados entre as sessões;
+
+* Dominamos a arte de criar elementos dinamicamente no JavaScript e inseri-los no DOM, proporcionando uma atualização em tempo real da interface do usuário;
