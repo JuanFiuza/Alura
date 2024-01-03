@@ -48,3 +48,26 @@ Interagir e manipular classes de um elemento HTML com classList.toggle;
 * Criar e adicionar ouvintes de eventos com addEventListener;
 
 * Prevenir comportamentos padrão de elementos HTML, como o recarregamento da página ao submeter um formulário com preventDefault;
+
+* Utilizar o localStorage para armazenar e recuperar dados, permitindo persistência entre sessões;
+
+* Criar elementos utilizando o document.createElement;
+
+* Aninhar elementos utilizando o método append;
+
+* Encapsular lógicas repetidas em funções, como a atualização de itens no localStorage;
+
+* Adicionar eventos de clique diretamente a um elemento com a propriedade onclick;
+Utilizar a função prompt para obter informações diretamente do usuário;
+
+* Atualizar conteúdo textual de um elemento DOM dinamicamente;
+
+* Aprendemos a adicionar e remover classes de elementos HTML para alterar sua aparência ou comportamento, como evidenciado pelo código que adiciona e remove a classe app__section-task-list-item-active;
+
+* Compreendemos como lidar com um estado no JavaScript para rastrear a tarefa selecionada atualmente, usando variáveis como tarefaSelecionada e liTarefaSelecionada;
+
+* Desenvolvemos uma lógica para permitir que os usuários cliquem e selecione/desselecione uma tarefa, e como responder a essas interações;
+
+* Trabalhamos com a criação e resposta a eventos personalizados, como o evento FocoFinalizado, que é usado para marcar uma tarefa como concluída;
+
+* Melhoramos a experiência do usuário ao fornecer feedback visual sobre a tarefa selecionada e a capacidade de marcar uma tarefa como concluída

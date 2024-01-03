@@ -18,7 +18,8 @@ const audioTempoFinalizado = new Audio('./sons/beep.mp3');
 
 let tempoDecorridoEmSegundos = 1500
 let intervaloId = null
-
+/* musica do checkbox que fica em loop e pausa
+e da play no mesmo botão*/  
 musica.loop = true
 
 musicaFocoInput.addEventListener('change', () => {
@@ -28,7 +29,7 @@ musicaFocoInput.addEventListener('change', () => {
         musica.pause();
     }
 });
-
+// evento de cada botão programado
 focoBt.addEventListener('click', () => {
     tempoDecorridoEmSegundos = 1500
     alterarContexto('foco');
@@ -46,7 +47,7 @@ longoBt.addEventListener('click', () => {
     alterarContexto('descanso-longo');
     longoBt.classList.add('active');
 });
-
+// alterar o texto e a imagem da tela
 function alterarContexto(contexto) {
     mostrarTempo();
     botoes.forEach(function (contexto) {
@@ -74,8 +75,8 @@ function alterarContexto(contexto) {
             break;
     }
 }
-
-const contage mRegressiva = () => {
+// contador
+const contagemRegressiva = () => {
     if (tempoDecorridoEmSegundos <= 0) {
         audioTempoFinalizado.play();
         // alert('Tempo finalizado!');
@@ -107,7 +108,7 @@ function zerar() {
     IniciarOuPausarImg.setAttribute('src', './imagens/play_arrow.png')
     intervaloId = null
 }
-
+// converter em segundos para minutos no formato 00:00
 function mostrarTempo() {
     var tempo = new Date(tempoDecorridoEmSegundos * 1000);
     var tempoFormatado = tempo.toLocaleTimeString('pt-br', {minute: '2-digit', second: '2-digit'});
